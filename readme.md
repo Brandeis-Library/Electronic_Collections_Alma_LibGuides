@@ -1,4 +1,4 @@
-![Logo](./images/Library_logo_blue_DIGITAL.png)
+![Brandeis University Library Logo](./images/Library_logo_blue_DIGITAL.png)
 
 # _{Electronic_Collections_Alma_LibGuides}_
 
@@ -34,7 +34,7 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 ### License
 
-\_\*{MIT License
+_*{MIT License}*_
 
 Copyright (c) [2020][brandeis university library]
 
