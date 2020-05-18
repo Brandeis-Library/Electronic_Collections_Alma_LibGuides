@@ -1,3 +1,5 @@
+![Logo](./images/Library_logo_blue_DIGITAL.png)
+
 # _{Electronic_Collections_Alma_LibGuides}_
 
 #### _{Brief description of application}, {5/18/2020}_
