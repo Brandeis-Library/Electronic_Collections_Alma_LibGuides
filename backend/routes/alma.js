@@ -20,7 +20,7 @@ router.get('/collections', async function (req, res, next) {
 });
 
 /* GET a single collection. */
-router.get('/collection/:collection_id', async function (req, res, next) {
+router.get('/collections/:collection_id', async function (req, res, next) {
   try {
     const { collection_id } = req.params;
     const { data } = await axios(
