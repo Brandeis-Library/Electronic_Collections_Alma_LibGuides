@@ -1,0 +1,78 @@
+[
+  {
+    "id": "61255868660001921",
+    "is_local": false,
+    "public_name": "Gale In Context: Biography",
+    "public_name_override": "",
+    "description": "",
+    "internal_description": "",
+    "library": {
+      "value": null,
+      "link": null
+    },
+    "type": {
+      "value": "1",
+      "desc": "Aggregator package"
+    },
+    "interface": {
+      "name": "Galegroup",
+      "vendor": null
+    },
+    "process_type": {
+      "value": "",
+      "desc": null
+    },
+    "access_type": {
+      "value": "current",
+      "desc": "Current"
+    },
+    "counter_platform": {
+      "value": "gold",
+      "desc": null
+    },
+    "po_line": {
+      "value": "",
+      "link": null
+    },
+    "activation_date": "2019-07-17Z",
+    "license": {
+      "value": "",
+      "link": null
+    },
+    "alternative_title": "",
+    "source": "",
+    "creator": "",
+    "url": "http://solutions.cengage.com/incontext/biography/",
+    "url_override": "https://go.gale.com/ps/dispBasicSearch.do?userGroupName=mlin_m_brandeis&prodId=BIC1",
+    "free": {
+      "value": "",
+      "desc": null
+    },
+    "proxy_enabled": {
+      "value": "false",
+      "desc": "No"
+    },
+    "proxy": "",
+    "language": {
+      "value": "",
+      "desc": null
+    },
+    "category": "",
+    "resource_metadata": {
+      "mms_id": {
+        "value": "9923452047001921",
+        "link": "https://api-na.hosted.exlibrisgroup.com/almaws/v1/bibs/9923452047001921"
+      },
+      "title": "Gale biography in context.",
+      "author": "Gale Group.",
+      "issn": ""
+    },
+    "portfolios": {
+      "value": 487,
+      "link": null
+    },
+    "authentication_note": "",
+    "public_note": "",
+    "link": "https://api-na.hosted.exlibrisgroup.com/almaws/v1/electronic/e-collections/61255868660001921"
+  }
+]
