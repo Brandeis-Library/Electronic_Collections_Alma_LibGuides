@@ -1,10 +1,10 @@
-var express = require('express');
-var router = express.Router();
-var nconf = require('nconf');
+const express = require('express');
+const router = express.Router();
+const dotenv = require('dotenv').config;
 var crypto = require('crypto');
 
 // Load configuration
-nconf.env().file({ file: './config.json' });
+//nconf.env().file({ file: './config.json' });
 
 function validateSignature(body, secret, signature) {
   var hash = crypto
@@ -28,7 +28,7 @@ router.post('/', function (req, res, next) {
   console.log('Received webhook request:', JSON.stringify(req.body));
 
   // Validate signature
-  var secret = nconf.get('WEBHOOK_SECRET');
+  var secret = process.env.WEBHOOK_SECRET;
   if (!validateSignature(req.body, secret, req.get('X-Exl-Signature'))) {
     return res.status(401).send({ errorMessage: 'Invalid Signature' });
   }
