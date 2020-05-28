@@ -1,14 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const dotenv = require('dotenv').config;
-var crypto = require('crypto');
+const dotenv = require('dotenv').config();
+const crypto = require('crypto');
 
 // Load configuration
-//nconf.env().file({ file: './config.json' });
 
 function validateSignature(body, secret, signature) {
   var hash = crypto
-    .createHmac('SHA256', secret)
+    .createHmac('sha256', secret)
     .update(JSON.stringify(body))
     .digest('base64');
   return hash === signature;
