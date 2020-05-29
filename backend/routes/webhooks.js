@@ -17,7 +17,7 @@ function validateSignature(body, secret, signature) {
 GET - Challenge
 */
 router.get('/', function (req, res, next) {
-  console.log('Alma Webhooks challenge');
+  console.log('Alma Webhooks challenge', req.query.challenge);
   res.json({ challenge: req.query.challenge });
 });
 
