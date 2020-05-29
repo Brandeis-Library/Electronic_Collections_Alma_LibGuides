@@ -17,6 +17,7 @@ function validateSignature(body, secret, signature) {
 GET - Challenge
 */
 router.get('/', function (req, res, next) {
+  console.log('Alma Webhooks challenge');
   res.json({ challenge: req.query.challenge });
 });
 
@@ -29,9 +30,10 @@ router.post('/', function (req, res, next) {
   // Validate signature
   var secret = process.env.WEBHOOK_SECRET;
   if (!validateSignature(req.body, secret, req.get('X-Exl-Signature'))) {
+    console.log('did not validate request');
     return res.status(401).send({ errorMessage: 'Invalid Signature' });
   }
-
+  console.log('validated signature');
   // Handle webhook
   var action = req.body.action.toLowerCase();
   switch (action) {
