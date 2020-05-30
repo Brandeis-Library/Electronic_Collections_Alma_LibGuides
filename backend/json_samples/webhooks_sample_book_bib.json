@@ -1,0 +1,60 @@
+[
+  {
+    "Received_webhook_request": {
+      "id": "3239709654151672784",
+      "action": "BIB",
+      "institution": {
+        "value": "01BRAND_INST",
+        "desc": "Brandeis University"
+      },
+      "time": "2020-05-29T19:43:06.526Z",
+      "event": {
+        "value": "BIB_UPDATED",
+        "desc": "BIB record updated"
+      },
+      "bib": {
+        "mms_id": "991258350101921",
+        "record_format": "marc21",
+        "linked_record_id": {
+          "value": "",
+          "type": null
+        },
+        "title": "The Lebanese and Syrians in America /",
+        "author": "Wakin, Edward",
+        "issn": null,
+        "isbn": null,
+        "network_number": ["(MBB)000125835MBB01", "(OCoLC)1633676"],
+        "place_of_publication": "Chicago :",
+        "date_of_publication": "1974.",
+        "publisher_const": "Claretian Publications,",
+        "holdings": {
+          "value": "",
+          "link": "/almaws/v1/bibs/991258350101921/holdings"
+        },
+        "created_by": "import",
+        "created_date": "2014-03-04Z",
+        "last_modified_by": "cunderwood",
+        "last_modified_date": "2020-05-29Z",
+        "suppress_from_publishing": "false",
+        "suppress_from_external_search": "false",
+        "sync_with_oclc": "BIBS",
+        "sync_with_libraries_australia": "NONE",
+        "originating_system": "OCLC",
+        "originating_system_id": "000125835-MBB01",
+        "cataloging_level": {
+          "value": "00",
+          "desc": "Default Level"
+        },
+        "anies": [
+          "<?xml version=\"1.0\" encoding=\"UTF-16\"?><record><leader>00700cam  2200241S  4500</leader><controlfield tag=\"001\">991258350101921</controlfield><controlfield tag=\"002\">00130807</controlfield><controlfield tag=\"005\">20200529154301.0</controlfield><controlfield tag=\"008\">750918 1974                  00000 eng u</controlfield><datafield ind1=\" \" ind2=\" \" tag=\"035\"><subfield code=\"a\">(OCoLC)1633676</subfield></datafield><datafield ind1=\" \" ind2=\" \" tag=\"035\"><subfield code=\"a\">(MBB)000125835MBB01</subfield></datafield><datafield ind1=\" \" ind2=\" \" tag=\"040\"><subfield code=\"c\">OZC</subfield><subfield code=\"d\">m.c.</subfield><subfield code=\"d\">MBB</subfield></datafield><datafield ind1=\" \" ind2=\" \" tag=\"049\"><subfield code=\"a\">MBBB</subfield></datafield><datafield ind1=\" \" ind2=\" \" tag=\"099\"><subfield code=\"a\">E184 .S98 W3</subfield></datafield><datafield ind1=\"1\" ind2=\"0\" tag=\"100\"><subfield code=\"a\">Wakin, Edward</subfield></datafield><datafield ind1=\"1\" ind2=\"4\" tag=\"245\"><subfield code=\"a\">The Lebanese and Syrians in America /</subfield><subfield code=\"c\">Edward Wakin.</subfield></datafield><datafield ind1=\"0\" ind2=\" \" tag=\"260\"><subfield code=\"a\">Chicago :</subfield><subfield code=\"b\">Claretian Publications,</subfield><subfield code=\"c\">1974.</subfield></datafield><datafield ind1=\" \" ind2=\" \" tag=\"300\"><subfield code=\"a\">48 p. :</subfield><subfield code=\"b\">ill. ;</subfield><subfield code=\"c\">19 cm.</subfield></datafield><datafield ind1=\"1\" ind2=\" \" tag=\"490\"><subfield code=\"a\">Jubilee paperbacks</subfield></datafield><datafield ind1=\" \" ind2=\"0\" tag=\"650\"><subfield code=\"a\">Lebanese</subfield><subfield code=\"z\">United States</subfield></datafield><datafield ind1=\" \" ind2=\"0\" tag=\"650\"><subfield code=\"a\">Syrians</subfield><subfield code=\"z\">United States</subfield></datafield><datafield ind1=\" \" ind2=\"0\" tag=\"830\"><subfield code=\"a\">Jubilee paperbacks</subfield></datafield><datafield ind1=\" \" ind2=\" \" tag=\"906\"><subfield code=\"a\">Can you see this? How about now?</subfield></datafield></record>"
+        ],
+        "requests": null,
+        "link": null
+      },
+      "holding": null,
+      "item": null,
+      "portfolio": null,
+      "representation": null
+    }
+  }
+]

@@ -35,8 +35,14 @@ router.post('/', function (req, res, next) {
   }
   console.log('validated signature');
   // Handle webhook
-  var action = req.body.action.toLowerCase();
+  const action = req.body.action.toLowerCase();
+  const mmsID = req.body.bib.mms_id;
+  const holdingsURL = req.body.bib.holdings.link;
   switch (action) {
+    case bib:
+      console.log(
+        `Type ${action}. mms_id = ${mmsID} holdingsURL = ${holdingsURL}`
+      );
     default:
       console.log('No handler for type', action);
   }
