@@ -1,0 +1,149 @@
+<?xml version=\"1.0\" encoding=\"UTF-16\"?>
+<record>
+  <leader>02993nai  2200481 u 4500</leader>
+  <controlfield tag=\"001\">9923452047001921</controlfield>
+  <controlfield tag=\"005\">20200529173308.0</controlfield>
+  <controlfield tag=\"006\">m     o  d        </controlfield>
+  <controlfield tag=\"007\">cr#c||||||||||</controlfield>
+  <controlfield tag=\"008\">990928c19999999miudr d o     0    2eng c</controlfield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"010\">
+    <subfield code=\"a\">##2009267101</subfield>
+    <subfield code=\"z\">  2002556415</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"019\">
+    <subfield code=\"a\">663910204</subfield>
+    <subfield code=\"a\">670238409</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"035\">
+    <subfield code=\"a\">(OCoLC)42451575</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"040\">
+    <subfield code=\"a\">LML</subfield>
+    <subfield code=\"b\">eng</subfield>
+    <subfield code=\"c\">LML</subfield>
+    <subfield code=\"d\">DCU</subfield>
+    <subfield code=\"d\">MYG</subfield>
+    <subfield code=\"d\">OCLCQ</subfield>
+    <subfield code=\"d\">DOS</subfield>
+    <subfield code=\"d\">DLC</subfield>
+    <subfield code=\"d\">IUL</subfield>
+    <subfield code=\"d\">VTU</subfield>
+    <subfield code=\"d\">IUL</subfield>
+    <subfield code=\"d\">ZCU</subfield>
+    <subfield code=\"d\">OCLCQ</subfield>
+    <subfield code=\"d\">OCLCF</subfield>
+    <subfield code=\"d\">OCLCQ</subfield>
+    <subfield code=\"d\">OCL</subfield>
+    <subfield code=\"d\">MBB</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"042\">
+    <subfield code=\"a\">pcc</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"049\">
+    <subfield code=\"a\">MBBB</subfield>
+  </datafield>
+  <datafield ind1=\"0\" ind2=\"0\" tag=\"050\">
+    <subfield code=\"a\">CT104</subfield>
+  </datafield>
+  <datafield ind1=\"0\" ind2=\"0\" tag=\"245\">
+    <subfield code=\"a\">Gale biography in context.</subfield>
+  </datafield>
+  <datafield ind1=\"3\" ind2=\"0\" tag=\"246\">
+    <subfield code=\"a\">Biography in context</subfield>
+    <subfield code=\"f\">&lt;Sept. 29, 2010-&gt;</subfield>
+  </datafield>
+  <datafield ind1=\"1\" ind2=\" \" tag=\"246\">
+    <subfield code=\"i\">Also called &lt;Oct. 1, 2009&gt;:</subfield>
+    <subfield code=\"a\">Biography resource center digital archive</subfield>
+  </datafield>
+  <datafield ind1=\"1\" ind2=\" \" tag=\"246\">
+    <subfield code=\"i\">Commonly known as:</subfield>
+    <subfield code=\"a\">BioRC</subfield>
+  </datafield>
+  <datafield ind1=\"1\" ind2=\"0\" tag=\"247\">
+    <subfield code=\"a\">Biography resource center</subfield>
+    <subfield code=\"f\">1999-&lt;Oct. 1, 2009&gt;</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"260\">
+    <subfield code=\"3\">1999- :</subfield>
+    <subfield code=\"a\">Farmington Hills, MI :</subfield>
+    <subfield code=\"b\">Gale Group</subfield>
+  </datafield>
+  <datafield ind1=\"3\" ind2=\" \" tag=\"260\">
+    <subfield code=\"3\">&lt;2009-&gt; :</subfield>
+    <subfield code=\"a\">Farmington Hills, MI :</subfield>
+    <subfield code=\"b\">Gale Cengage Learning,</subfield>
+    <subfield code=\"c\">1999-</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"300\">
+    <subfield code=\"a\">1 online resource</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"310\">
+    <subfield code=\"a\">Updated daily,</subfield>
+    <subfield code=\"b\">&lt;Sept. 29, 2010&gt;</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"336\">
+    <subfield code=\"a\">text</subfield>
+    <subfield code=\"b\">txt</subfield>
+    <subfield code=\"2\">rdacontent</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"337\">
+    <subfield code=\"a\">computer</subfield>
+    <subfield code=\"b\">c</subfield>
+    <subfield code=\"2\">rdamedia</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"338\">
+    <subfield code=\"a\">online resource</subfield>
+    <subfield code=\"b\">cr</subfield>
+    <subfield code=\"2\">rdacarrier</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"500\">
+    <subfield code=\"a\">Title from home page (viewed Sept. 29, 2010).</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"506\">
+    <subfield code=\"a\">Electronic access restricted to Brandeis users only.</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"538\">
+    <subfield code=\"a\">Mode of access: World Wide Web.</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"520\">
+    <subfield code=\"a\">Biography in Context delivers outstanding research support with nearly a million biographical entries spanning history and geography. It offers media-rich content in context that is updated daily including 600,000+ biographies covering more than 525,000 individuals; 170+ award-winning Gale reference titles; 50,000 new or updated bios added annually in addition to daily updates to account for awards and events; integrated reference material, periodical information and multimedia content; hundreds of hand-crafted topic pages covering the highest-interest features. Also included is the Lives &amp; Perspectives Collection supporting high-school curricula and university coursework by providing multidisciplinary content on notable figures and the societal forces that have shaped their lives. The integration of this collection provides first-time-ever access to 160,000 bios drawn from: American Men &amp; Women of Science, Encyclopaedia Judaica, Governments of the World, Encyclopedia of African-American Culture and History, and nearly 40 other respected titles from Macmillan Reference USA, Charles Scribner's Sons and Gale.</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\"0\" tag=\"650\">
+    <subfield code=\"a\">Biography</subfield>
+    <subfield code=\"v\">Dictionaries.</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\"0\" tag=\"650\">
+    <subfield code=\"a\">Biography</subfield>
+    <subfield code=\"v\">Databases.</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\"0\" tag=\"650\">
+    <subfield code=\"a\">Biography</subfield>
+    <subfield code=\"v\">Dictionaries</subfield>
+    <subfield code=\"v\">Databases.</subfield>
+  </datafield>
+  <datafield ind1=\"2\" ind2=\" \" tag=\"710\">
+    <subfield code=\"a\">Gale Group.</subfield>
+  </datafield>
+  <datafield ind1=\"2\" ind2=\" \" tag=\"710\">
+    <subfield code=\"a\">Gale (Firm)</subfield>
+  </datafield>
+  <datafield ind1=\"4\" ind2=\"0\" tag=\"856\">
+    <subfield code=\"y\">ONLINE ACCESS AVAILABLE</subfield>
+    <subfield code=\"u\">http://resources.library.brandeis.edu/login?url=http://ic.galegroup.com/ic/bic1/?p=BIC1&amp;u=mlin_m_brandeis</subfield>
+  </datafield>
+  <datafield ind1=\"0\" ind2=\"0\" tag=\"904\">
+    <subfield code=\"a\">(CKB)611000000000000487</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"906\">
+    <subfield code=\"a\">Can you see me now?</subfield>
+  </datafield>
+  <datafield ind1=\"4\" ind2=\"0\" tag=\"917\">
+    <subfield code=\"u\">http://resources.library.brandeis.edu/login?url=http://ic.galegroup.com/ic/bic1/?p=BIC1&amp;u=mlin_m_brandeis</subfield>
+  </datafield>
+  <datafield ind1=\" \" ind2=\" \" tag=\"994\">
+    <subfield code=\"a\">C0</subfield>
+    <subfield code=\"b\">MBB</subfield>
+  </datafield>
+</record>
+
