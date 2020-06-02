@@ -12,6 +12,8 @@ router.get('/', async function (req, res, next) {
     try {
       console.log('inside readfile.');
 
+      data = data.replace(/\[\"/g, '"');
+      data = data.replace(/\"]/g, '"');
       data = data.replace(/\\/g, '');
       console.log('data=======  ', data);
       doc = data;

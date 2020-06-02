@@ -1,4 +1,4 @@
-<?xml version=\"1.0\" encoding=\"UTF-16\"?>
+["<?xml version=\"1.0\" encoding=\"UTF-16\"?>
 <record>
   <leader>02993nai  2200481 u 4500</leader>
   <controlfield tag=\"001\">9923452047001921</controlfield>
@@ -145,5 +145,5 @@
     <subfield code=\"a\">C0</subfield>
     <subfield code=\"b\">MBB</subfield>
   </datafield>
-</record>
+</record>"]
 
