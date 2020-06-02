@@ -38,6 +38,7 @@ router.post('/', function (req, res, next) {
   const action = req.body.action.toLowerCase();
   const mmsID = req.body.bib.mms_id;
   const holdingsURL = req.body.bib.holdings.link;
+  const anies = req.body.bib.anies;
   switch (action) {
     case bib:
       console.log(

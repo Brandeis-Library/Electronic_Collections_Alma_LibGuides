@@ -4,6 +4,8 @@ const router = express.Router();
 const xpath = require('xpath');
 const dom = require('xmldom').DOMParser;
 
+const aniesProcess = require('../utils/anies_processing');
+
 let doc = '';
 
 /* GET home page. */

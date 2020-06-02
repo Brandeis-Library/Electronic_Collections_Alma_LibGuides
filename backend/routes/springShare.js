@@ -41,4 +41,12 @@ router.get('/assets/:id', async function (req, res, next) {
     next(error);
   }
 });
+
+/* PUT - Update a single asset */
+router.put('/assets/', function (req, res, next) {
+  const title = req.query.title;
+  console.log('title', title);
+  res.json({ title });
+});
+
 module.exports = router;
