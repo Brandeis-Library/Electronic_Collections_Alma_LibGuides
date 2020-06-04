@@ -55,6 +55,7 @@ router.post('/', function (req, res, next) {
   document = document.replace(/\\/g, '');
   console.log('document post data removal-----', document);
   let xmlParsedDoc = new dom().parseFromString(document);
+  console.log('xmlParsedDoc', xmlParsedDoc);
   let nodes = xpath.select('//datafield[@tag=906]/subfield', xmlParsedDoc);
   let nodesData = nodes[0].toString();
   nodesData = nodesData.replace(/<subfield(.*?)>/g, '');
