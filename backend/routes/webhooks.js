@@ -50,8 +50,8 @@ router.post('/', function (req, res, next) {
   );
   const document = req.body.bib.anies;
   console.log('document', document);
-  document = document.replace(/\[\'/g, '"');
-  document = document.replace(/\']/g, '"');
+  document = document.replace(/\[\'/g, "'");
+  document = document.replace(/\']/g, "'");
   document = document.replace(/\\/g, '');
   console.log('document post data removal-----', document);
   let xmlParsedDoc = new dom().parseFromString(document);
