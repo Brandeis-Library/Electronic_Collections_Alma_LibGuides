@@ -58,7 +58,7 @@ router.post('/', function (req, res, next) {
   nodesData = nodesData.replace(/<subfield(.*?)>/g, '');
   nodesData = nodesData.replace(/<\/subfield>/g, '');
   switch (action) {
-    case bib:
+    case 'bib':
       console.log(
         `Type ${action}. mms_id = ${mmsID} holdingsURL = ${holdingsURL}`
       );
