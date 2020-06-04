@@ -40,6 +40,14 @@ router.post('/', function (req, res, next) {
   const action = req.body.action.toLowerCase();
   const mmsID = req.body.bib.mms_id;
   const holdingsURL = req.body.bib.holdings.link;
+  console.log(
+    'action, mmsID, hodingsURL=============  ',
+    action,
+    '  ',
+    mmsID,
+    '  ',
+    holdingsURL
+  );
   const document = req.body.bib.anies;
   document = document.replace(/\[\"/g, '"');
   document = document.replace(/\"]/g, '"');
