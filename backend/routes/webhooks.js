@@ -49,6 +49,7 @@ router.post('/', function (req, res, next) {
     holdingsURL
   );
   const document = req.body.bib.anies;
+  console.log('document', document);
   document = document.replace(/\[\"/g, '"');
   document = document.replace(/\"]/g, '"');
   document = document.replace(/\\/g, '');
