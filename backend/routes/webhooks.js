@@ -26,7 +26,7 @@ router.get('/', function (req, res, next) {
 /*
 POST - Handle webhook
 */
-router.post('/', function (req, res, next) {
+router.post('/', async function (req, res, next) {
   console.log('Received webhook request:', JSON.stringify(req.body));
 
   // Validate signature
@@ -54,7 +54,7 @@ router.post('/', function (req, res, next) {
   document = document.replace(/\']/g, "'");
   document = document.replace(/\\/g, '');
   console.log('document post data removal-----', document);
-  let xmlParsedDoc = new dom().parseFromString(document);
+  let xmlParsedDoc = await new dom().parseFromString(document);
   console.log('xmlParsedDoc', xmlParsedDoc);
   let nodes = xpath.select('//datafield[@tag=906]/subfield', xmlParsedDoc);
   let nodesData = nodes[0].toString();
