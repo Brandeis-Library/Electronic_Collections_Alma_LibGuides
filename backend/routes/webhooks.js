@@ -40,9 +40,11 @@ router.post('/', function (req, res, next) {
   const action = req.body.action.toLowerCase();
   const mmsID = req.body.bib.mms_id;
   const holdingsURL = req.body.bib.holdings.link;
-  const anies = req.body.bib.anies;
-
-  let xmlParsedDoc = new dom().parseFromString(anies);
+  const document = req.body.bib.anies;
+  document = document.replace(/\[\"/g, '"');
+  document = document.replace(/\"]/g, '"');
+  document = document.replace(/\\/g, '');
+  let xmlParsedDoc = new dom().parseFromString(document);
   let nodes = xpath.select('//datafield[@tag=906]/subfield', xmlParsedDoc);
   let nodesData = nodes[0].toString();
   nodesData = nodesData.replace(/<subfield(.*?)>/g, '');
