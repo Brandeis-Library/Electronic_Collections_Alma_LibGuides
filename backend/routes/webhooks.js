@@ -57,6 +57,9 @@ router.post('/', function (req, res, next) {
   let nodesData = nodes[0].toString();
   nodesData = nodesData.replace(/<subfield(.*?)>/g, '');
   nodesData = nodesData.replace(/<\/subfield>/g, '');
+  console.log('               ');
+  console.log('anies........', document);
+  console.log('nodesData', nodesData);
   switch (action) {
     case 'bib':
       console.log(
