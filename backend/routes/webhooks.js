@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const dotenv = require('dotenv').config();
+const xpath = require('xpath');
+const dom = require('xmldom').DOMParser;
 const crypto = require('crypto');
 
 // Load configuration
@@ -39,11 +41,21 @@ router.post('/', function (req, res, next) {
   const mmsID = req.body.bib.mms_id;
   const holdingsURL = req.body.bib.holdings.link;
   const anies = req.body.bib.anies;
+
+  let xmlParsedDoc = new dom().parseFromString(anies);
+  let nodes = xpath.select('//datafield[@tag=906]/subfield', xmlParsedDoc);
+  let nodesData = nodes[0].toString();
+  nodesData = nodesData.replace(/<subfield(.*?)>/g, '');
+  nodesData = nodesData.replace(/<\/subfield>/g, '');
   switch (action) {
     case bib:
       console.log(
         `Type ${action}. mms_id = ${mmsID} holdingsURL = ${holdingsURL}`
       );
+      console.log('               ');
+      console.log('anies........', anies);
+      console.log('nodesData', nodesData);
+
     default:
       console.log('No handler for type', action);
   }
