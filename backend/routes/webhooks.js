@@ -55,24 +55,30 @@ router.post('/', async function (req, res, next) {
   // document = document.replace(/\[\'/g, "'");
   // document = document.replace(/\']/g, "'");
   // document = document.replace(/\\/g, '');
-  console.log('document post data removal-----', document);
+  //console.log('document post data removal-----', document);
   let xmlParsedDoc = await new dom().parseFromString(document);
   console.log('xmlParsedDoc', xmlParsedDoc);
-  let nodes = xpath.select('//datafield[@tag=906]/subfield', xmlParsedDoc);
-  let nodesData = nodes[0].toString();
-  nodesData = nodesData.replace(/<subfield(.*?)>/g, '');
-  nodesData = nodesData.replace(/<\/subfield>/g, '');
-  console.log('               ');
-  console.log('anies........', document);
-  console.log('nodesData', nodesData);
+  let nodes906 = xpath.select('//datafield[@tag=906]/subfield', xmlParsedDoc);
+  let nodes906Data = nodes906[0].toString();
+  nodes906Data = nodes906Data.replace(/<subfield(.*?)>/g, '');
+  nodes906Data = nodes906Data.replace(/<\/subfield>/g, '');
+  // console.log('               ');
+  // console.log('anies........', document);
+  console.log('nodes906Data', nodes906Data);
+  let nodes520 = xpath.select('//datafield[@tag=520]/subfield', xmlParsedDoc);
+  let nodes520Data = nodes520[0].toString();
+  nodes520Data = nodes520Data.replace(/<subfield(.*?)>/g, '');
+  nodes520Data = nodes520Data.replace(/<\/subfield>/g, '');
+
   switch (action) {
     case 'bib':
       console.log(
         `Type ${action}. mms_id = ${mmsID} holdingsURL = ${holdingsURL}`
       );
       console.log('               ');
-      console.log('anies........', anies);
-      console.log('nodesData', nodesData);
+      console.log('anies........', document);
+      console.log('nodes906Data', nodes906Data);
+      console.log('nodes520Data', nodes520Data);
 
     default:
       console.log('No handler for type', action);
