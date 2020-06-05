@@ -76,7 +76,11 @@ router.post('/', async function (req, res, next) {
   let nodes856Data = nodes856[1].toString();
   nodes856Data = nodes856Data.replace(/<subfield(.*?)>/g, '');
   nodes856Data = nodes856Data.replace(/<\/subfield>/g, '');
-
+  // 245
+  let nodes245 = xpath.select('//datafield[@tag=245]/subfield', xmlParsedDoc);
+  let nodes245Data = nodes245[0].toString();
+  nodes245Data = nodes245Data.replace(/<subfield(.*?)>/g, '');
+  nodes245Data = nodes245Data.replace(/<\/subfield>/g, '');
   switch (action) {
     case 'bib':
       console.log('               ');
@@ -85,9 +89,11 @@ router.post('/', async function (req, res, next) {
       console.log(
         `Type ${action}. mms_id = ${mmsID} holdingsURL = ${holdingsURL}`
       );
+      console.log('nodes245Data', nodes245Data);
       console.log('nodes906Data', nodes906Data);
       console.log('nodes520Data', nodes520Data);
       console.log('nodes856Data', nodes856Data);
+
       break;
     default:
       console.log('No handler for type', action);
