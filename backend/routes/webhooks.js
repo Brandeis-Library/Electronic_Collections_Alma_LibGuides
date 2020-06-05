@@ -58,28 +58,37 @@ router.post('/', async function (req, res, next) {
   //console.log('document post data removal-----', document);
   let xmlParsedDoc = await new dom().parseFromString(document);
   console.log('xmlParsedDoc', xmlParsedDoc);
+  // 906
   let nodes906 = xpath.select('//datafield[@tag=906]/subfield', xmlParsedDoc);
   let nodes906Data = nodes906[0].toString();
   nodes906Data = nodes906Data.replace(/<subfield(.*?)>/g, '');
   nodes906Data = nodes906Data.replace(/<\/subfield>/g, '');
   // console.log('               ');
   // console.log('anies........', document);
-  console.log('nodes906Data', nodes906Data);
+  //console.log('nodes906Data', nodes906Data);
+  // 520
   let nodes520 = xpath.select('//datafield[@tag=520]/subfield', xmlParsedDoc);
   let nodes520Data = nodes520[0].toString();
   nodes520Data = nodes520Data.replace(/<subfield(.*?)>/g, '');
   nodes520Data = nodes520Data.replace(/<\/subfield>/g, '');
+  // 856
+  let nodes856 = xpath.select('//datafield[@tag=856]/subfield', xmlParsedDoc);
+  let nodes856Data = nodes856[1].toString();
+  nodes856Data = nodes856Data.replace(/<subfield(.*?)>/g, '');
+  nodes856Data = nodes856Data.replace(/<\/subfield>/g, '');
 
   switch (action) {
     case 'bib':
+      console.log('               ');
+      console.log('anies........', document);
+      console.log('               ');
       console.log(
         `Type ${action}. mms_id = ${mmsID} holdingsURL = ${holdingsURL}`
       );
-      console.log('               ');
-      console.log('anies........', document);
       console.log('nodes906Data', nodes906Data);
       console.log('nodes520Data', nodes520Data);
-
+      console.log('nodes856Data', nodes856Data);
+      break;
     default:
       console.log('No handler for type', action);
   }
