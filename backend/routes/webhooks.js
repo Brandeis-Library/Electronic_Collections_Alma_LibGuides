@@ -32,23 +32,23 @@ router.post('/', async function (req, res, next) {
 
   // Validate signature
   var secret = process.env.WEBHOOK_SECRET;
-  //if (!validateSignature(req.body, secret, req.get('X-Exl-Signature'))) {
-  //   console.log('did not validate request');
-  //   return res.status(401).send({ errorMessage: 'Invalid Signature' });
-  // }
+  if (!validateSignature(req.body, secret, req.get('X-Exl-Signature'))) {
+    console.log('did not validate request');
+    return res.status(401).send({ errorMessage: 'Invalid Signature' });
+  }
   console.log('validated signature');
   // Handle webhook
   const action = req.body.action.toLowerCase();
   const mmsID = req.body.bib.mms_id;
   const holdingsURL = req.body.bib.holdings.link;
-  console.log(
-    'action, mmsID, hodingsURL=============  ',
-    action,
-    '  ',
-    mmsID,
-    '  ',
-    holdingsURL
-  );
+  //console.log(
+  //   'action, mmsID, hodingsURL=============  ',
+  //   action,
+  //   '  ',
+  //   mmsID,
+  //   '  ',
+  //   holdingsURL
+  // );
   let document = req.body.bib.anies;
   document = document.toString();
   console.log('document', document);
